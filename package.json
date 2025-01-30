@@ -1,0 +1,29 @@
+{
+  "name": "book_store",
+  "version": "1.0.0",
+  "description": "Book Store with 2 major roles",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "NodeJS",
+    "Express",
+    "Mongo"
+  ],
+  "author": "Pavithra Reddy",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "book_store": "file:",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.3",
+    "nodemon": "^3.1.9",
+    "validator": "^13.12.0"
+  }
+}
