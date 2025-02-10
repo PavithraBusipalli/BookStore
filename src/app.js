@@ -6,9 +6,15 @@ const { cartRouter } = require('./routes/cart');
 const { wishlistRouter } = require('./routes/wishlist');
 const cookieParser = require("cookie-parser");
 require('dotenv').config('../../.env');
-
+const cors = require("cors");
 
 const app = express();
+
+app.use(cors({
+  origin: 'http://localhost:3000', // Allow only this origin
+  methods: 'GET,POST,PUT,DELETE',  // Allowed HTTP methods
+  allowedHeaders: 'Content-Type,Authorization'
+}));
 
 app.use(express.json());
 app.use(cookieParser());
